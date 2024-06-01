@@ -1,0 +1,148 @@
+/* ----- Main ----- */
+.fondo {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url('slide1.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+.fondo--registro {
+    background-image: url('slide2.jpg');
+}
+
+.capa-fondo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.contenedor {
+    height: 100vh;
+    width: min(90%, 120rem);
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenido {
+    background-color: rgba(173, 171, 201, 0.1);
+    padding: 2rem 10rem;
+    border-radius: 2rem;
+}
+
+.formulario {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: 1fr 3fr;
+    gap: 2rem;
+    grid-template-areas:
+        'label1 field1'
+        'label2 field2'
+        'blanco boton';
+}
+
+.campo1, .campo2, .campo3, .campo4 {
+    display: flex;
+    align-items: center;
+}
+
+.campo1 {
+    justify-content: end;
+}
+
+.campo2, .campo3 {
+    justify-content: start;
+}
+
+.campo4 {
+    justify-content: end;
+}
+
+.campo_label {
+    text: 0 0.5rem;
+    text-align: right;
+}
+
+.campo_field {
+    border: none;
+    border-bottom: 0.2rem solid var(--blanco);
+    padding: 1rem;
+    color: var(--blanco);
+    background-color: transparent;
+    width: 100%;
+}
+
+::-webkit-input-placeholder {
+    color: var(--blanco);
+    text-transform: uppercase;
+}
+
+/* Boton */
+.boton {
+    display: block;
+    font-family: var(--fuenteHeadings);
+    color: var(--negro);
+    background: var(--blanco);
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    padding: 1rem 3rem;
+    margin-bottom: 2rem;
+    border: none;
+    border-radius: 2rem;
+}
+
+.boton:hover {
+    cursor: pointer;
+}
+
+.boton--primario {
+    background-color: var(--blanco);
+    color: var(--negro);
+}
+
+.boton--secundario {
+    background-color: transparent;
+    border: 0.1rem solid var(--blanco);
+    color: var(--blanco);
+}
+
+/* Registro */
+.fondo--registro {
+    background-image: url('slide2.jpg');
+}
+
+.formulario-registro {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    grid-template-areas:
+        'nombre apellido'
+        'email email2'
+        'contraseña contraseña2'
+        'boton1 boton2';
+}
+
+.registro__field {
+    border: none;
+    border-bottom: 0.2rem solid var(--blanco);
+    padding: 1rem;
+    color: var(--blanco);
+    background-color: transparent;
+    width: 90%;
+}
+
+.campoIzq, .campoDer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 2rem;
+}
