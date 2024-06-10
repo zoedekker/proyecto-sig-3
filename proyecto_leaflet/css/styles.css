@@ -1,0 +1,35 @@
+.map {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.legend {
+    position: fixed;
+    bottom: 0px; /* Ajusta la distancia desde el fondo */
+    left: 15px; /* Ajusta la distancia desde la izquierda */
+    background-color: white;
+    line-height: 1.5em;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    font-size: 14px; /* Cambia el tamaño de la fuente para que se vea más grande */
+    max-width: 250px; /* Ajusta el tamaño máximo de la leyenda */
+}
+
+.legend h4 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 18px; /* Cambia el tamaño del título */
+}
+
+.legend img {
+    vertical-align: middle;
+    height: 30px; /* Cambia el tamaño de los símbolos */
+    width: 30px;
+}
+
+.legend div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
